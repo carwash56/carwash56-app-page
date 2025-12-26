@@ -22,20 +22,20 @@
       "enableGooglePay": true
     }
   ],
-  "./app.plugin.js"
-  ,
   "expo-web-browser",
   "expo-font",
   [
     "expo-build-properties",
     {
       "ios": {
-        "useFrameworks": "static",
         "useModularHeaders": true
       }
     }
-  ]
+  ],
+  "./app.plugin.js"
 ],
+
+
 
     "extra": {
   "EXPO_PUBLIC_API_URL": "https://carwash-backend-final.onrender.com",
