@@ -15,16 +15,16 @@
     ],
     "scheme": "carwash56",
     "plugins": [
-      [
-        "@stripe/stripe-react-native",
-        {
-          "merchantIdentifier": "merchant.com.carwash56",
-          "enableGooglePay": true
-        }
-      ],
-      "expo-web-browser",
-      "expo-font"
-    [
+  [
+    "@stripe/stripe-react-native",
+    {
+      "merchantIdentifier": "merchant.com.carwash56",
+      "enableGooglePay": true
+    }
+  ],
+  "expo-web-browser",
+  "expo-font",
+  [
     "expo-build-properties",
     {
       "ios": {
@@ -33,6 +33,7 @@
     }
   ]
 ],
+
     "extra": {
   "EXPO_PUBLIC_API_URL": "https://carwash-backend-final.onrender.com",
   "eas": {
