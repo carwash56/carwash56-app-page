@@ -1,29 +1,56 @@
 {
   "expo": {
-    "name": "carwash56-fresh",
-    "slug": "carwash56-fresh",
-    "version": "1.0.0",
+    "name": "Carwash56",
+    "slug": "carwash56",
+    "version": "8.0.9",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "icon": "./assets/logo-carwash-square.png",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/logo-carwash-square.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000000"
     },
-    "ios": {
-      "supportsTablet": true
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "scheme": "carwash56",
+    "plugins": [
+      [
+        "@stripe/stripe-react-native",
+        {
+          "merchantIdentifier": "merchant.com.carwash56",
+          "enableGooglePay": true
+        }
+      ],
+      "expo-web-browser",
+      "expo-font"
+    ],
+    "extra": {
+  "EXPO_PUBLIC_API_URL": "https://carwash-backend-final.onrender.com",
+  "eas": {
+    "projectId": "92b60aaa-6528-4c18-9395-3441705bb157"
+  }
+
     },
     "android": {
+      "package": "com.carwash56.mobileapp",
+      "versionCode": 87,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
+        "foregroundImage": "./assets/logo-carwash-square.png",
+        "backgroundColor": "#000000"
+      }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "ios": {
+  "bundleIdentifier": "com.carwash56.mobileapp",
+  "buildNumber": "9",         
+  "supportsTablet": false,
+  "infoPlist": {
+    "NSCameraUsageDescription": "L'app nécessite l'accès à la caméra pour prendre des photos du véhicule ou du mobilier.",
+    "NSPhotoLibraryUsageDescription": "L'app nécessite l'accès à la galerie photo pour envoyer des images.",
+    "NSLocationWhenInUseUsageDescription": "Votre localisation est utilisée pour calculer le trajet et les frais de déplacement.",
+    "ITSAppUsesNonExemptEncryption": false
+  }
+}
+
   }
 }
