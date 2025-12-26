@@ -24,7 +24,15 @@
       ],
       "expo-web-browser",
       "expo-font"
-    ],
+    [
+    "expo-build-properties",
+    {
+      "ios": {
+        "useFrameworks": "dynamic"
+      }
+    }
+  ]
+],
     "extra": {
   "EXPO_PUBLIC_API_URL": "https://carwash-backend-final.onrender.com",
   "eas": {
@@ -42,7 +50,7 @@
     },
     "ios": {
   "bundleIdentifier": "com.carwash56.mobileapp",
-  "buildNumber": "9",         
+  "buildNumber": "9",        
   "supportsTablet": false,
   "infoPlist": {
     "NSCameraUsageDescription": "L'app nécessite l'accès à la caméra pour prendre des photos du véhicule ou du mobilier.",
@@ -50,7 +58,7 @@
     "NSLocationWhenInUseUsageDescription": "Votre localisation est utilisée pour calculer le trajet et les frais de déplacement.",
     "ITSAppUsesNonExemptEncryption": false
   }
-}
-
+    }
   }
 }
+ 
