@@ -22,6 +22,8 @@
       "enableGooglePay": true
     }
   ],
+  "./app.plugin.js"
+  ,
   "expo-web-browser",
   "expo-font",
   [
